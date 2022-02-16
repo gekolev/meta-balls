@@ -1,0 +1,56 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.blured {
+	&-wrapper {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background-color: #8000ff;
+		filter: contrast(7);
+	}
+	&-circle {
+		position: absolute;
+		border-radius: 100%;
+		background-color: #ff8000;		
+		filter: blur(1.2vmax);
+		@for $i from 1 through 9 {
+			&:nth-of-type(#{$i}) { 
+				top: 45vh + $i;
+				left: 45vw + $i;
+				width: 5vmax + $i;
+				height: 5vmax + $i;
+				animation: 3s * $i blured-move-#{$i} linear infinite;
+			}
+		}
+	}
+}
+
+@keyframes blured-move-1 {
+	from {
+		transform: rotate(0deg) translateX(2vmax) rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg) translateX(2vmax) rotate(360deg);
+	}
+}
+
+@keyframes blured-move-2 {
+	from {
+		transform: rotate(0deg) translateX(5vmax) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(5vmax) rotate(-360deg);
+	}
+}
+
+@keyframes blured-move-3 {
+  from {
+		transform: rotate(0deg) translateX(1vmax) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(1vmax) rotate(-360deg);
+	}
+}
