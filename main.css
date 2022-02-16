@@ -7,7 +7,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #8000ff;
+  background-color: #22172c;
   -webkit-filter: contrast(7);
           filter: contrast(7);
 }
@@ -15,7 +15,7 @@
 .blured-circle {
   position: absolute;
   border-radius: 100%;
-  background-color: #ff8000;
+  background-color: #b1297d;
   -webkit-filter: blur(1.2vmax);
           filter: blur(1.2vmax);
 }
@@ -46,7 +46,6 @@
   -webkit-animation: 9s blured-move-3 linear infinite;
           animation: 9s blured-move-3 linear infinite;
 }
-
 
 @-webkit-keyframes blured-move-1 {
   from {

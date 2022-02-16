@@ -8,15 +8,15 @@
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
-		background-color: #8000ff;
+		background-color: #22172c;
 		filter: contrast(7);
 	}
 	&-circle {
 		position: absolute;
 		border-radius: 100%;
-		background-color: #ff8000;		
+		background-color: #b1297d;		
 		filter: blur(1.2vmax);
-		@for $i from 1 through 9 {
+		@for $i from 1 through 3 {
 			&:nth-of-type(#{$i}) { 
 				top: 45vh + $i;
 				left: 45vw + $i;
